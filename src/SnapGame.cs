@@ -15,14 +15,6 @@ namespace CardGames
             SwinGame.LoadFontNamed("GameFont", "Chunkfive.otf", 12);
         }
 
-	public class SnapGame
-	{
-		public static void LoadResources()
-		{
-			Bitmap cards;
-			cards = SwinGame.LoadBitmapNamed("Cards", "Cards.png");
-			SwinGame.BitmapSetCellDetails(cards, 82, 110, 13, 5, 53);      // set the cells in the bitmap to match the cards
-		}
 
 
 		/// <summary>
@@ -33,10 +25,10 @@ namespace CardGames
 			//Fetch the next batch of UI interaction
 			SwinGame.ProcessEvents();
 
-			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
-			{
-			myGame.Start ();
-
+            if (SwinGame.KeyTyped(KeyCode.vk_SPACE))
+            {
+                myGame.Start();
+            }
 
 			if (SwinGame.KeyTyped(KeyCode.vk_SPACE))
 			{
